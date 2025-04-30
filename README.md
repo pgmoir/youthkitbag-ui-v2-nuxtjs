@@ -124,3 +124,5 @@ With Nuxt's file-based routing, pages are placed in the /pages directory. You'll
 ```
 
 > Use definePageMeta({ layout: 'auth', middleware: 'auth' }) in dashboard/index.vue, etc.
+
+## Set up default port
