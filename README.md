@@ -1,4 +1,22 @@
-# Nuxt Minimal Starter
+# youthkitbag-ui-v2-nuxtjs
+
+Building the youthkitbag front end from scratch again using modern technologies. This phase will use the existing rest api and database, but may interact with some elements direct. This version is going to be built using NuxtJS.
+
+This is a [Nuxt](https://nuxt.com) project bootstrapped with [`npm create nuxt`](https://nuxt.com/docs/getting-started/installation).
+
+## Recommended Way to Start latest Nuxt
+
+```bash
+npm create nuxt my-app
+```
+
+This will guide you through prompts such as:
+
+- Package manager - select npm (as tried pnpm several times and in kept crashing)
+- Git already initialised so skippd
+- Installed all official modules
+
+## Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
