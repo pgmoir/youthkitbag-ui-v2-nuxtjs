@@ -91,3 +91,36 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Nuxt 3 App Structure (Vue-based)
+
+With Nuxt's file-based routing, pages are placed in the /pages directory. You'll use layouts, middleware, and composables to control access.
+
+```bash
+/pages/
+│
+├── index.vue              # Marketing landing page ("/")
+├── signin.vue             # Sign-in page ("/signin")
+├── signup.vue             # Sign-up page ("/signup")
+├── help.vue               # Public help page ("/help")
+├── prices.vue             # Public prices page ("/prices")
+│
+├── dashboard/             # Logged-in user space ("/dashboard")
+│   ├── index.vue          # Default logged-in home ("/dashboard")
+│   ├── profile.vue        # Example future page ("/dashboard/profile")
+│   └── settings.vue       # Example future page
+│
+/layouts/
+├── default.vue            # Used for most public pages
+├── auth.vue               # Used for signed-in user pages (e.g., dashboard)
+│
+/middleware/
+├── auth.ts                # Redirect if not authenticated
+│
+/components/
+├── Navbar.vue
+├── Footer.vue
+├── AuthForm.vue
+```
+
+> Use definePageMeta({ layout: 'auth', middleware: 'auth' }) in dashboard/index.vue, etc.
