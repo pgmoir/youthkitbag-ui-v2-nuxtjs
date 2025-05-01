@@ -1,11 +1,19 @@
 @import 'tailwindcss';
 @import '@nuxt/ui';
 
+html {
+  font-size: 14px;
+}
+
 body {
-  background-image: url('/images/sport-wallpaper.jpg');
-  background-repeat: repeat;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
+}
+
+body {
+  color: #3e3f3a;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 nav {
@@ -43,4 +51,16 @@ footer {
   &:hover {
     color: #93c54b;
   }
+}
+
+body {
+  background-image: url('/images/sport-wallpaper.jpg');
+  background-repeat: repeat;
+}
+
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
