@@ -19,3 +19,28 @@ nav {
 footer {
   background-color: #fafafa;
 }
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 24px;
+}
+
+.nav-logo {
+  color: #fff;
+  justify-self: flex-start;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    color: #93c54b;
+  }
+}
