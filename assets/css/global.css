@@ -1,5 +1,21 @@
-/* assets/css/global.css */
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
 body {
   background-image: url('/images/sport-wallpaper.jpg');
   background-repeat: repeat;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+}
+
+nav {
+  background-color: #0c3b5c;
+  color: #fff;
+  height: 80px;
+  position: sticky;
+  top: 0;
+}
+
+footer {
+  background-color: #fafafa;
 }

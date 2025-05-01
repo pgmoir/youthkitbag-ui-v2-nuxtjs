@@ -1,3 +1,3 @@
 <template>
-  <h2>NavBar</h2>
+  <nav>YouthKitbag</nav>
 </template>
