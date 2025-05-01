@@ -1,5 +1,9 @@
+<script setup lang="ts">
+import HeroSection from '~/components/HeroSection.vue';
+</script>
+
 <template>
-  <div>
-    <h1>Main body at start</h1>
+  <div className="flex flex-col items-center text-center">
+    <HeroSection />
   </div>
 </template>

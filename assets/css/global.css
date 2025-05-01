@@ -1,8 +1,8 @@
 @import 'tailwindcss';
 @import '@nuxt/ui';
 
-html {
-  font-size: 14px;
+:root {
+  --spacing: 1rem;
 }
 
 body {
@@ -51,6 +51,14 @@ footer {
   &:hover {
     color: #93c54b;
   }
+}
+
+.color-darkblue {
+  color: #0c3b5c;
+}
+
+.background-color-darkblue {
+  background-color: #0c3b5c;
 }
 
 body {
