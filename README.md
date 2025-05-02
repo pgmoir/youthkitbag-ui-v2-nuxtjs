@@ -1,6 +1,6 @@
 # youthkitbag-ui-v2-nuxtjs
 
-Building the youthkitbag front end from scratch again using modern technologies. This phase will use the existing rest api and database, but may interact with some elements direct. This version is going to be built using NuxtJS.
+I am running three consecutive projects to rebuild my youthkitbag front end from scratch again latest tech techstacks, React, NextJS and Nuxt (Vue based). I want to compare the patterns recommended for building with these tools, and compare how they perform, and how easy it is to build, test and deploy. I want to deploy to free services, and connect to the existing API. I also want the general look and feel to remain consistent with the original, but I want style to be simplified. I have opted to go with tailwindcss (as this seems to be the recommended approach that they all use), and daisyui (for free tailwindcss based components that can be used by all three projects). I don't want to get bogged down with style, but I want a nice clean fresh feel that doesn't get in the way of the structure. I will be building the three projects in parallel, feature by feature, step by step. I've also chosen npm as a consistent approach.
 
 This is a [Nuxt](https://nuxt.com) project bootstrapped with [`npm create nuxt`](https://nuxt.com/docs/getting-started/installation).
 
@@ -25,35 +25,15 @@ Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduct
 Make sure to install dependencies:
 
 ```bash
-# npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`:
+Start the development server on `http://localhost:3001`:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
@@ -61,33 +41,13 @@ bun run dev
 Build the application for production:
 
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
@@ -134,3 +94,9 @@ export default defineNuxtConfig({
   },
 });
 ```
+
+## Implement DaisyUI (with TailwindCSS)
+
+I wanted to keep the actual html structure very consistent across the projects, so to facilitate component development I chose DaisyUI which seems to be the only free component library based on tailwindcss that can be used across the board.
+
+I had a number of issues plugging it into Nuxt, that had my head scratching, until I realise a simple mistake of copy/paste of structure from React projects where they use `className` instead of `class`. Typo fixed and now visual identity matches exactly.
