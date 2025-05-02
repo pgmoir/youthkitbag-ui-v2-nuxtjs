@@ -9,6 +9,7 @@
 
 <script setup>
 useHead({
+  htmlAttrs: { 'data-theme': 'nord' },
   titleTemplate: (titleChunk) =>
     titleChunk
       ? `${titleChunk} · YouthKitbag Nuxt`
