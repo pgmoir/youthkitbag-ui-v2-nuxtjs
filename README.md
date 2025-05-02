@@ -60,7 +60,7 @@ With Nuxt's file-based routing, pages are placed in the /pages directory. You'll
 /pages/
 │
 ├── index.vue              # Marketing landing page ("/")
-├── signin.vue             # Sign-in page ("/signin")
+├── login.vue              # Log-in page ("/login")
 ├── signup.vue             # Sign-up page ("/signup")
 ├── help.vue               # Public help page ("/help")
 ├── prices.vue             # Public prices page ("/prices")

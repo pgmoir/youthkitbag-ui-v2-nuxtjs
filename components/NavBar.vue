@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar bg-neutral text-neutral-content">
+  <nav class="navbar sticky top-0 z-50 bg-neutral text-neutral-content">
     <div class="navbar-start">
       <a href="/" class="btn btn-ghost text-xl">YouthKitbag</a>
     </div>
