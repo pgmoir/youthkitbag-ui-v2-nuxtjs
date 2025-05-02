@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import HeroSection from '~/components/HeroSection.vue';
+import HeroSectionOrganise from '~/components/loggedouthome/HeroSectionOrganise.vue';
 </script>
 
 <template>
   <div>
-    <HeroSection />
+    <HeroSectionOrganise />
   </div>
 </template>
