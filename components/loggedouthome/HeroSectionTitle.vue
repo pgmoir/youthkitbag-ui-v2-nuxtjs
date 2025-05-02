@@ -12,11 +12,12 @@
           trade or share with the people you know and trust when it is no longer
           needed, lost or stolen.
         </p>
-        <button
+        <a
+          href="#signup"
           class="btn btn-lg btn-wide btn-primary text-base-300 rounded-full"
         >
           Get Started
-        </button>
+        </a>
       </div>
     </div>
   </section>

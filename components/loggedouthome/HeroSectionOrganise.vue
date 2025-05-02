@@ -9,9 +9,9 @@
           Store and track your sports, musical, school or whatever kit your
           children need or have.
         </p>
-        <button class="btn btn-lg btn-wide btn-success rounded-full">
+        <a href="#signup" class="btn btn-lg btn-wide btn-success rounded-full">
           Join Youthkitbag
-        </button>
+        </a>
       </div>
     </div>
   </section>

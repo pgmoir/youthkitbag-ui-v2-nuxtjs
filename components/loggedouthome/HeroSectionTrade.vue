@@ -12,9 +12,9 @@
           you know or trust. If its lost or stolen, or you need new or used kit,
           share the info quickly with the people most likely to help,
         </p>
-        <button class="btn btn-lg btn-wide btn-success rounded-full">
+        <a href="#signup" class="btn btn-lg btn-wide btn-success rounded-full">
           Join Youthkitbag
-        </button>
+        </a>
       </div>
     </div>
   </section>

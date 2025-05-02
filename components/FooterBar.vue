@@ -24,21 +24,23 @@
     </aside>
     <nav>
       <h6 class="footer-title">About YouthKitbag</h6>
-      <a class="link link-hover">Buy a Bundle</a>
-      <a class="link link-hover">Help</a>
-      <a class="link link-hover">Media</a>
+      <a href="/prices" class="link link-hover">Buy a Bundle</a>
+      <a href="/help" class="link link-hover">Help</a>
+      <a href="/media" class="link link-hover">Media</a>
     </nav>
     <nav>
       <h6 class="footer-title">Information for</h6>
-      <a class="link link-hover">Terms & Conditions</a>
-      <a class="link link-hover">Privacy Policy</a>
-      <a class="link link-hover">Cookies</a>
-      <a class="link link-hover">Security</a>
-      <a class="link link-hover">Accessibility</a>
+      <a href="/terms-conditions" class="link link-hover">Terms & Conditions</a>
+      <a href="/privacy-policy" class="link link-hover">Privacy Policy</a>
+      <a href="/cookies" class="link link-hover">Cookies</a>
+      <a href="/security" class="link link-hover">Security</a>
+      <a href="/accessibility" class="link link-hover">Accessibility</a>
     </nav>
     <nav>
       <h6 class="footer-title">Contact details</h6>
-      <a class="link link-hover">pgmoir@gmail.com</a>
+      <a href="mailto:pgmoir@gmail.com" class="link link-hover"
+        >pgmoir@gmail.com</a
+      >
     </nav>
   </footer>
 </template>

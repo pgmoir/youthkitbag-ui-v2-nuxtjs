@@ -12,9 +12,12 @@
           are members of or attend.
         </p>
         <div class="flex justify-end">
-          <button class="btn btn-lg btn-wide btn-success rounded-full">
+          <a
+            href="#signup"
+            class="btn btn-lg btn-wide btn-success rounded-full"
+          >
             Join Youthkitbag
-          </button>
+          </a>
         </div>
       </div>
     </div>

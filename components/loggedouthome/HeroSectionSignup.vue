@@ -40,7 +40,9 @@
             </button>
             <div class="text-center">
               <span> If you already have a kitbag, </span>
-              <a class="link link-hover">then login for access</a>
+              <a href="/signin" class="link link-hover"
+                >then sign in for access</a
+              >
             </div>
           </fieldset>
         </div>
