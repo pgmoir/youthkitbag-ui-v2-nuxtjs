@@ -29,6 +29,8 @@
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "^3.2.0",
-    "eslint-plugin-vue": "^10.1.0"
+    "eslint-plugin-vue": "^10.1.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-vue": "^1.1.6"
   }
 }

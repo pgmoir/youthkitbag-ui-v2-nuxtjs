@@ -1,0 +1,8 @@
+{
+  "editor.formatOnSave": true,
+  "[vue]": {
+    "editor.defaultFormatter": "johnsoncodehk.volar" // use Volar, not Prettier
+  },
+  "prettier.enable": true,
+  "vetur.format.defaultFormatter.html": "none"
+}

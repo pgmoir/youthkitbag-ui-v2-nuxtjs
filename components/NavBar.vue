@@ -23,7 +23,7 @@
       </ul>
     </div>
     <div class="navbar-end">
-      <a href="/signin" class="btn text-base">Sign In</a>
+      <a href="/signin" class="btn text-base">Log In</a>
       <div class="dropdown dropdown-end">
         <div tabIndex="{0}" role="button" class="btn btn-ghost lg:hidden">
           <svg
