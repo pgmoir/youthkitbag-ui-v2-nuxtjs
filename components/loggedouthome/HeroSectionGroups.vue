@@ -1,5 +1,5 @@
 <template>
-  <div class="hero min-h-180">
+  <section id="groups" class="hero min-h-180">
     <div class="hero-content flex-col md:flex-row-reverse max-w-240">
       <img src="/images/groups.svg" class="max-w-sm p-3" />
       <div>
@@ -18,5 +18,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>

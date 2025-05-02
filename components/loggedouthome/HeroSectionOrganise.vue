@@ -1,5 +1,5 @@
 <template>
-  <div class="hero bg-base-200 min-h-180">
+  <section id="kitbags" class="hero bg-base-200 min-h-180">
     <div class="hero-content flex-col md:flex-row max-w-240">
       <img src="/images/organise.svg" class="max-w-sm p-3" />
       <div>
@@ -14,5 +14,5 @@
         </button>
       </div>
     </div>
-  </div>
+  </section>
 </template>

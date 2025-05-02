@@ -1,5 +1,5 @@
 <template>
-  <div class="hero bg-primary min-h-180">
+  <section id="signup" class="hero bg-primary min-h-180">
     <div class="hero-content">
       <div class="card bg-base-100 shrink-0 shadow-2xl min-w-lg">
         <div class="card-body">
@@ -46,5 +46,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>

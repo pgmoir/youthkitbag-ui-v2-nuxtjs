@@ -1,5 +1,5 @@
 <template>
-  <div class="hero min-h-180">
+  <section id="market" class="hero min-h-180">
     <div class="hero-content flex-col md:flex-row max-w-240">
       <img src="/images/trade.svg" class="max-w-sm p-3" />
       <div>
@@ -17,5 +17,5 @@
         </button>
       </div>
     </div>
-  </div>
+  </section>
 </template>

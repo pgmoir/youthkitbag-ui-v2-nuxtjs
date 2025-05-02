@@ -1,5 +1,5 @@
 <template>
-  <div class="hero bg-base-300 min-h-180">
+  <section id="trust" class="hero bg-base-300 min-h-180">
     <div class="hero-content flex-col max-w-240">
       <h2 class="text-5xl font-semibold text-center">Trust in Groups</h2>
       <div class="flex lg:flex-row flex-col">
@@ -44,5 +44,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>

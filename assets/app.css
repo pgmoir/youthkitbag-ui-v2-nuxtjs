@@ -3,6 +3,10 @@
   themes: all;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url('/images/sport-wallpaper.jpg');
   background-repeat: repeat;

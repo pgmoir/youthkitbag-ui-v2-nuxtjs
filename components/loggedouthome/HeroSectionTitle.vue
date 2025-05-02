@@ -1,5 +1,5 @@
 <template>
-  <div class="hero min-h-180">
+  <section id="title" class="hero min-h-180">
     <div class="hero-content text-center">
       <div class="max-w-lg">
         <h1 class="text-5xl font-semibold">
@@ -19,5 +19,5 @@
         </button>
       </div>
     </div>
-  </div>
+  </section>
 </template>
