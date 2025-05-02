@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxtjs/google-fonts',
   ],
-  css: ['@/assets/css/global.css'],
+  css: ['@/assets/app.css'],
   googleFonts: {
     families: {
       Roboto: [400, 500, 700],

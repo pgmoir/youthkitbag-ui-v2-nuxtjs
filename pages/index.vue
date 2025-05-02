@@ -3,7 +3,7 @@ import HeroSection from '~/components/HeroSection.vue';
 </script>
 
 <template>
-  <div className="flex flex-col items-center text-center">
+  <div>
     <HeroSection />
   </div>
 </template>
