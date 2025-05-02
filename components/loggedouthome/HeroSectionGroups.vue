@@ -1,6 +1,6 @@
 <template>
   <div class="hero min-h-180">
-    <div class="hero-content flex-col lg:flex-row-reverse max-w-240">
+    <div class="hero-content flex-col md:flex-row-reverse max-w-240">
       <img src="/images/groups.svg" class="max-w-sm p-3" />
       <div>
         <h2 class="uppercase text-success mb-1 text-right">Join groups</h2>

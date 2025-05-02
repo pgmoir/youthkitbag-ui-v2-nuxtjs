@@ -1,6 +1,6 @@
 <template>
   <div class="hero bg-base-200 min-h-180">
-    <div class="hero-content flex-col lg:flex-row max-w-240">
+    <div class="hero-content flex-col md:flex-row max-w-240">
       <img src="/images/organise.svg" class="max-w-sm p-3" />
       <div>
         <h2 class="uppercase text-success mb-1">Organise your kit</h2>
