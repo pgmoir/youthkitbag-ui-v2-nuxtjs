@@ -26,4 +26,12 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  runtimeConfig: {
+    // Server-only variables (NOT exposed to client)
+    apiBaseUrl: process.env.API_BASE_URL,
+
+    // Exposed to client if under `public:`
+    // public: {
+    // },
+  },
 });

@@ -6,9 +6,9 @@
           <h2 class="text-3xl font-semibold text-center">
             Access your kitbags!
           </h2>
-          <form @submit.prevent="handleSubmit">
+          <form class="mb-2" @submit.prevent="login">
             <fieldset class="fieldset">
-              <div class="mb-2">
+              <div>
                 <legend class="fieldset-legend">Email</legend>
                 <input
                   v-model="form.email"
@@ -32,19 +32,18 @@
                   {{ errors.password }}
                 </p>
               </div>
-
               <button
                 type="submit"
-                class="btn btn-xl btn-primary mt-4 text-base-300 mb-3"
-                :disabled="isSubmitting"
+                class="btn btn-xl btn-primary mt-4 text-base-300"
+                :disabled="pending"
               >
-                <span v-if="isSubmitting">Logging in...</span>
+                <span v-if="pending">Logging in...</span>
                 <span v-else>Log In</span>
               </button>
-              <p v-if="serverError" class="text-red-600 mt-4 text-sm">
-                {{ serverError }}
-              </p>
             </fieldset>
+            <p v-if="serverError" class="text-red-600 mt-1 text-md text-center">
+              {{ serverError }}
+            </p>
           </form>
           <div class="text-center">
             <span>If you don&apos;t have an account, </span>
@@ -66,60 +65,42 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { z } from 'zod';
 
 const { $toast } = useNuxtApp();
 
-const isSubmitting = ref(false);
-
+const pending = ref(false);
 const form = ref({
   email: '',
   password: '',
 });
-
 const errors = ref<Record<string, string>>({});
 const serverError = ref('');
 
-// Zod schema for validation
-const loginSchema = z.object({
-  email: z.string().email({ message: 'Invalid email address' }),
-  password: z
-    .string()
-    .min(6, { message: 'Password must be at least 6 characters' }),
-});
+const login = async () => {
+  if (pending.value) return;
 
-async function handleSubmit() {
-  if (isSubmitting.value) return;
+  pending.value = true;
+  errors.value = {};
+  serverError.value = '';
 
   try {
-    isSubmitting.value = true;
-
-    errors.value = {};
-    serverError.value = '';
-
-    const result = loginSchema.safeParse(form.value);
-    if (!result.success) {
-      for (const issue of result.error.issues) {
-        errors.value[issue.path[0]] = issue.message;
-      }
-      return;
-    }
-
-    // use old API instead of /api/login
-    const res = await $fetch('https://youthkitbag-core-api.onrender.com/auth/login', {
+    await $fetch('/api/login', {
       method: 'POST',
       body: form.value,
     });
 
+    pending.value = false;
     await navigateTo('/');
-    $toast.success(`Login successful: ${JSON.stringify(res)}`);
+    $toast.success(`Login successful!`);
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  } catch (err: any) {
-    const errMessage = err?.data?.message || 'Login failed. Please try again.'
-    serverError.value = errMessage;
-    $toast.error(errMessage);
-  } finally {
-    isSubmitting.value = false;
+  } catch (error: any) {
+    const { data } = error;
+    pending.value = false;
+    if (data?.data) {
+      errors.value = data.data;
+    }
+    serverError.value = data.message;
+    $toast.error(data.message || 'Errors have been identified');
   }
-}
+};
 </script>
